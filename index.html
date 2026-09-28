@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#191919"><meta name="description" content="BLOOM by Damianonyx. An interactive particle flower, unfolding in real time.">
+<title>BLOOM — Damianonyx</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23191919'/%3E%3Cg fill='none' stroke='%23eee' stroke-width='2'%3E%3Cellipse cx='32' cy='27' rx='10' ry='17'/%3E%3Cellipse cx='32' cy='27' rx='10' ry='17' transform='rotate(60 32 27)'/%3E%3Cellipse cx='32' cy='27' rx='10' ry='17' transform='rotate(-60 32 27)'/%3E%3Cpath d='M32 40v16'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"><script src="bloom.js" defer></script>
+</head>
+<body>
+<main class="experience">
+<header><a class="wordmark" href="./" aria-label="Damianonyx home">DAMIANONYX<span class="mark">®</span></a><span class="edition">FORM & MOTION <span class="divider">/</span> STUDY 001</span></header>
+<div class="stage" id="stage"><canvas id="flower" aria-label="A live three dimensional white particle flower that slowly blossoms. Drag to rotate." role="img"></canvas><video id="fallback" src="reference.mp4" muted playsinline loop hidden aria-label="Reference animation of a blooming particle flower"></video></div>
+<section class="intro" aria-labelledby="title"><span class="eyebrow">A DIGITAL BOTANICAL</span><h1 id="title">BLOOM<span class="period">.</span></h1><p>Everything unfolds<br>in its own time.</p><div class="fine-line"></div><span class="intro-note">A living study in particles.</span></section>
+<div class="interaction-hint" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12h18M7 8l-4 4 4 4m10-8 4 4-4 4"/></svg> DRAG TO ROTATE</div>
+<footer><div class="caption"><span class="caption-title">THE ART OF BECOMING</span><span class="caption-sub">Light. Form. A little patience.</span></div><div class="controls"><button id="pause" aria-label="Pause animation"><svg id="pause-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M4 3h3v10H4zm5 0h3v10H9z"/></svg><span id="pause-label">Pause</span></button><span class="control-rule"></span><button id="replay" aria-label="Replay bloom"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></svg>Replay</button></div><div class="bloom-control"><div class="range-label"><label for="bloom">BLOOM</label><output id="percentage" for="bloom">0%</output></div><input id="bloom" type="range" min="0" max="100" value="0" aria-label="Bloom openness"></div></footer>
+</main>
+</body></html>
